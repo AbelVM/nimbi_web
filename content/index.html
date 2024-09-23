@@ -317,7 +317,7 @@ a("#md-body").css("margin-top",b+"px")}function d(){var b=0,d=a.md.util.repeatUn
     </div>
     <script>
         
-        if (top.location == self.location) top.location.href = window.location.origin + '/' + window.location.search;
+        if (window.self == window.top) top.location.href = `${window.location.origin}/${window.location.search}`;
 
         document.addEventListener('DOMContentLoaded', async event => {
             const sleep = ms => new Promise(r => setTimeout(r, ms));
