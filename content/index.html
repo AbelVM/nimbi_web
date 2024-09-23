@@ -344,6 +344,7 @@ a("#md-body").css("margin-top",b+"px")}function d(){var b=0,d=a.md.util.repeatUn
                         });
                     });
                     setTimeout(() => {
+                        if (!!!droplet) return false;
                         if (parent.window.scrollY === 0){
                             droplet.style.opacity = 1;
                             droplet.style.pointerEvents = 'auto';
