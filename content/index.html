@@ -323,20 +323,19 @@ a("#md-body").css("margin-top",b+"px")}function d(){var b=0,d=a.md.util.repeatUn
                 target = new URL(window.location.origin);
             let tag;
             if(!!origin.searchParams.get('hash')){
+                console.log(1);
                 tag = origin.searchParams.get('hash');
-                origin.searchParams.set("hash", tag);
+                target.searchParams.set("hash", tag);
             }else if(!!!origin.searchParams.get('hash') && location.hash !== ''){
-                origin.searchParams.set("hash", btoa(location.hash));
-            }else{
-                origin.searchParams.delete("hash");
-            }            
-            top.location.href = target;
+                console.log(2);
+                target.searchParams.set("hash", btoa(location.hash));
+            }
+            top.location.replace(target);
         }else{
             const url = new URL(parent.window.location);
             url.searchParams.set("hash", btoa(window.location.hash));
             parent.history.pushState(null, '', url);
         }
-        if (window.self == window.top) top.location.href = (window.location.search === '') : `${window.location.origin}/${window.location.search}`;
 
         document.addEventListener('DOMContentLoaded', async event => {
             const sleep = ms => new Promise(r => setTimeout(r, ms));
