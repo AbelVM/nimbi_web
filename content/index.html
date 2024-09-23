@@ -316,6 +316,9 @@ a("#md-body").css("margin-top",b+"px")}function d(){var b=0,d=a.md.util.repeatUn
         </div>
     </div>
     <script>
+        
+        if (top.location == self.location) top.location.href = window.location.origin + '/' + window.location.search;
+
         document.addEventListener('DOMContentLoaded', async event => {
             const sleep = ms => new Promise(r => setTimeout(r, ms));
             for (let i = 0; i < 5; i++) {
@@ -326,7 +329,7 @@ a("#md-body").css("margin-top",b+"px")}function d(){var b=0,d=a.md.util.repeatUn
                         body = document.querySelector('#md-body'),
                         home = document.querySelector('.navbar-brand'),
                         droplet = parent.document.querySelector('.droplet');
-                    if(window.innerHeight < $('#md-body').outerHeight(true) + 4 * parseFloat(getComputedStyle(document.body).fontSize)){
+                    if(!!window.ScrollTimeline && window.innerHeight < $('#md-body').outerHeight(true) + 4 * parseFloat(getComputedStyle(document.body).fontSize)){
                         const progress = document.createElement('div');
                         progress.id='progress';
                         navbar.insertAdjacentElement('beforeend', progress);
