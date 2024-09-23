@@ -317,7 +317,26 @@ a("#md-body").css("margin-top",b+"px")}function d(){var b=0,d=a.md.util.repeatUn
     </div>
     <script>
         
-        if (window.self == window.top) top.location.href = `${window.location.origin}/${window.location.search}`;
+        if (window.self == window.top) {
+            const 
+                origin = new URL(window.location),
+                target = new URL(window.location.origin);
+            let tag;
+            if(!!origin.searchParams.get('hash')){
+                tag = origin.searchParams.get('hash');
+                origin.searchParams.set("hash", tag);
+            }else if(!!!origin.searchParams.get('hash') && location.hash !== ''){
+                origin.searchParams.set("hash", btoa(location.hash));
+            }else{
+                origin.searchParams.delete("hash");
+            }            
+            top.location.href = target;
+        }else{
+            const url = new URL(parent.window.location);
+            url.searchParams.set("hash", btoa(window.location.hash));
+            parent.history.pushState(null, '', url);
+        }
+        if (window.self == window.top) top.location.href = (window.location.search === '') : `${window.location.origin}/${window.location.search}`;
 
         document.addEventListener('DOMContentLoaded', async event => {
             const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -370,9 +389,6 @@ a("#md-body").css("margin-top",b+"px")}function d(){var b=0,d=a.md.util.repeatUn
             });
         } , true);
         window.addEventListener('touchmove', parent.onTouchMove);
-        const url = new URL(parent.window.location)
-        url.searchParams.set("hash", btoa(window.location.hash));
-        parent.history.pushState(null, '', url);
     </script>
 </body>
 </html>
