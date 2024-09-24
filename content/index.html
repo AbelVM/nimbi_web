@@ -346,7 +346,15 @@ a("#md-body").css("margin-top",b+"px")}function d(){var b=0,d=a.md.util.repeatUn
                         navbar = document.querySelector('.navbar'),
                         body = document.querySelector('#md-body'),
                         home = document.querySelector('.navbar-brand'),
+                        title = document.querySelector('h1').innerText,
+                        metas = parent.document.querySelectorAll('meta');
                         droplet = parent.document.querySelector('.droplet');
+                    parent.document.title = `nimbi: ${title}`;
+                    metas.forEach((meta) => {
+                        if (meta.getAttribute('name') == 'description' || meta.getAttribute('name') == 'twitter:description' || meta.getAttribute('property') == 'og:description') {
+                            meta.setAttribute('content', title)
+                        }
+                    });
                     if(!!window.ScrollTimeline && window.innerHeight < $('#md-body').outerHeight(true) + 4 * parseFloat(getComputedStyle(document.body).fontSize)){
                         const progress = document.createElement('div');
                         progress.id='progress';
