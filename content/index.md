@@ -1,6 +1,6 @@
 # An ephemeral status update
 
-**Updated on 2024-09-23
+**Updated on 2024-09-23**
 
 Last week' recap! 😅
 
