@@ -54,3 +54,5 @@ Disallow: /
 
 User-agent: YouBot
 Disallow: /
+
+Sitemap: https://nimbi.es/sitemap.xml
