@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Renta por fuentes de ingresos</title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mapa de la renta bruta en España, desglosada por fuentes de ingresos">
+  <meta name="language" content="Spanish">
+  <meta name="author" content="Abel Vázquez Montoro">
+
+  <meta property="og:title" content="Renta por fuentes de ingresos">
+  <meta property="og:site_name" content="nimbi">
+  <meta property="og:url" content="nimbi.es">
+  <meta property="og:description" content="Mapa de la renta bruta en España, desglosada por fuentes de ingresos">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://nimbi.es/og-image-1200-627.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@abel_vm">
+  <meta name="twitter:title" content="nimbi">
+  <meta name="twitter:description" content="Mapa de la renta bruta en España, desglosada por fuentes de ingresos">
+  <meta name="twitter:image" content="https://nimbi.es/android-chrome-512x512.png">
+
+  <link rel="icon" href="https://nimbi.es/favicon.ico" type="image/x-icon" />
+  <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css' />
+  <link rel='stylesheet' href='assets/map.min.css' />
+  <script src='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js'></script>
+  <script src="https://unpkg.com/pmtiles/dist/pmtiles.js"></script>
+  <script type="module" src="assets/map.min.js" defer></script>
+</head>
+
+<body>
+
+  <div id="map"></div>
+  <div id="state-legend" class="legend">
+    <h2>Renta bruta por persona <span id="year">2022</span></h2><h3>distribución de su origen</h3>
+  </div>
+  <div class="maplibregl-ctrl maplibregl-ctrl-bottom-left footer">Made with <span class="heart">♥</span> by <a href="https://nimbi.es">Abel Vázquez Montoro</a></div>
+</body>
+
+</html>
