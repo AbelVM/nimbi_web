@@ -10,7 +10,7 @@ const initCMS = () => {
     window.__nimbiCMSDebug = false
     nimbiCMS.initCMS({
         el: '#app',
-        contentPath: 'content',
+        contentPath: './content',
         homePage: 'home.html',
         notFoundPage: '404.md',
         navigationPage: 'navigation.md',
