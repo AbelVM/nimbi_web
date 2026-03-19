@@ -1,16 +1,16 @@
 # Abel Vázquez Montoro
 
-![yep, this is me](images/yo.jpeg)
+<img src="images/yo.jpeg" alt="yep, this is me" style="height:256px;width:256px;" />
 
 ## Who am I?
 
 Engineer, generalist, diagonal thinker, map lover, hungry reader, tsundoku victim, music breather, plants & cats lover, Spatial-data-centric problems solver, bullshit allergic, GIFs are my 2nd language, walker & hiker.
 
-Focused on solving geospatial data problems since 2005, at companies like [idealista](https://www.idealista.com/), [inspide](https://inspide.com/), [urban Data Analytics](https://www.urbandataanalytics.com/), [CARTO](https://carto.com/), [GeoNet](https://www.geonet.es/) or [Aircraft Noise Technologies](https://www.anotecengineering.com/).
+Focused on solving geospatial data problems since 2005, at companies like [hareas](https://hareas.com), [idealista](https://www.idealista.com/), [inspide](https://inspide.com/), [urban Data Analytics](https://www.urbandataanalytics.com/), [CARTO](https://carto.com/), [GeoNet](https://www.geonet.es/) or [Aircraft Noise Technologies](https://www.anotecengineering.com/).
 
 Huge [Postgres](https://www.postgresql.org/) fan.
 
-Hint: Specialization is for insects.
+Hint: `Specialization is for insects`.
 
 ## Where am I?
 
@@ -18,7 +18,7 @@ I'm located on the sunny east coast of Spain, quite close to the sea. Andalusian
 
 ## I read
 
-Anything but non-fiction. Reading an essay or thesis or technical article is not reading, it is studing. And I'm in a continuous cycle of knowledge improvement, refurbishment and polishment, all day long, so when I read, I really need to experience emotions. Reading is an activity meant to help you evade from reality and open the door to restful sleep.
+Anything but non-fiction. Reading an essay or thesis or technical article is not reading, it is studing. I'm already in a continuous cycle of knowledge improvement, refurbishment and polishment, all day long, so when I read, I really need to experience emotions. Reading is an activity meant to help you evade from reality and open the door to restful sleep.
 
 Quite partial to Sci-Fi, noir, thriller, horror, comedy books and graphic novels.
 

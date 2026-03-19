@@ -5,7 +5,9 @@
     <meta charset="utf-8" />
 
     <title>nimbi</title>
-    
+
+<!--     <base href="/example/"> -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="nimbi: Plural form of 'nimbus', Latin word meaning 'rain cloud'.">
     <meta name="language" content="English">
@@ -37,26 +39,21 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <link rel="preload" href="assets/MoniceRegular.ttf" as="font" type="font/woff2" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://netdna.bootstrapcdn.com">
 
-  <script type="module" crossorigin src="./assets/index-CaMmqduR.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DrBrq_f-.css">
+    <link rel="preload" href="https://unpkg.com/nimbi-cms@1.0.5/dist/nimbi-cms.css" as="style"
+        onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/nimbi-cms@1.0.5/dist/nimbi-cms.css">
+    </noscript>
+    <script src="https://unpkg.com/nimbi-cms@1.0.5/dist/nimbi-cms.js"></script>
+
+    <link rel="stylesheet" href="assets/nimbi.css">
+    <script type="module" src="assets/nimbi.js" defer></script>
+
 </head>
 
 <body>
-    <div id="viewport">
-        <div id="world">
-            <div id="logo" class="center fatter">nimbi</div>
-        </div>
-    </div>
-    <div class="reminder">
-        <div class="droplet"></div>
-    </div>
-    <div id="content">
-        <iframe id="marco" src="content/index.html" frameborder="0"></iframe>
-    </div>
+    <div id="app"></div>
     <a rel="me" class="hidden" href="https://vis.social/@abel">Mastodon</a>
 </body>
 

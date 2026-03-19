@@ -2,11 +2,27 @@
 
 This section covers present and past side proyects. Some of them are full tools, some other are plugis or libs.
 
+## deck.gl-raster-multiband
+
+[![Presupuestos 2025 screenshot](images/multiband.jpg)](https://github.com/AbelVM/deckglraster-multiband)
+
+[deck.gl-raster-multiband](https://github.com/AbelVM/deckglraster-multiband) is a  JavaScript plugin that enables GPU-accelerated multiband raster algebra and styling for deck.gl-raster using GPU.js
+
+## Presupuestos 2025
+
+[![Presupuestos 2025 screenshot](images/presupuestos2025.png)](https://abelvm.github.io/presupuestos2025/)
+
+[Presupuestos 2025](https://abelvm.github.io/presupuestos2025/) is a data visualization tool that allows you to audit and compare in detail the municipal budget items for 2025 per inhabitant.
+
 ## MAdB
 
 [![MAdB screenshot](images/madb.jpeg)](https://madb.netlify.app)
 
 [MAdB](https://madb.netlify.app) is a self-contained graphical tool designed to asset the relative health risks caused by traffic noise in the city of Madrid.
+
+## Docker-inator
+
+[Docker-inator](https://github.com/AbelVM/docker-inator) is a `minimal` boilerplate to generate containerized pipelines or services, reusing the docker image as possible to avoid duplicities.
 
 ## Color Scales Builder
 
@@ -24,7 +40,7 @@ This section covers present and past side proyects. Some of them are full tools,
 
 [![screenshot](images/gauge.png)](https://github.com/AbelVM/gauge_legend)
 
-[This simple control]((https://github.com/AbelVM/gauge_legend) adds a dynamic legend component to a MapLibre GL map, where, for a given layer and numeric property, the average value of this property for the features currently rendered is displayed and a tick points to its position in the gauge scale.
+[This simple control](https://github.com/AbelVM/gauge_legend) adds a dynamic legend component to a MapLibre GL map, where, for a given layer and numeric property, the average value of this property for the features currently rendered is displayed and a tick points to its position in the gauge scale.
 
 ## MapLibreGL JS Preload
 

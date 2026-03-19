@@ -12,4 +12,4 @@ Just a selection of the tools or technologies I use on a daily basis
 * [Spotify](https://spotify.com): there is no way I'm going to work without music
 * ...
 
-Hint: With SQL and bash, you might conquer the world. Everything else are fireworks
+Hint: `With SQL and bash, you might conquer the world.` Everything else are fireworks

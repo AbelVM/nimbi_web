@@ -1,0 +1,86 @@
+
+
+#viewport {
+    perspective: 1000px;
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--nimbi-background);
+    overflow: hidden;
+    user-select: none;
+
+    position: fixed;
+    top: 0;
+    animation: sticky-header linear forwards;
+    animation-timeline: scroll();
+    animation-range: 0vh calc(100vh - var(--headerv));
+    cursor: all-scroll;
+}
+
+#world {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -256px;
+    margin-top: -256px;
+    height: 512px;
+    width: 512px;
+    /*   border: 1px solid rgb(255, 0, 0); */
+    transform-style: preserve-3d;
+    pointer-events: none;
+}
+
+#world div {
+    transform-style: preserve-3d;
+}
+
+.cloudBase {
+    /*   border: 1px solid #ff00ff; */
+    position: absolute;
+    left: 256px;
+    top: 256px;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.cloudLayer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 256px;
+    height: 256px;
+    margin-left: -128px;
+    margin-top: -128px;
+    opacity: 0;
+    transition: opacity 0.7s ease-out;
+}
+
+.fat {
+    color: #aaa;
+    font-weight: bold;
+    font-family: "Verdana";
+}
+
+.fatter {
+    color: var(--nimby);
+    /* #c62368; */
+    font-weight: 900;
+    font-size: 80px;
+    font-family: "Monice";
+}
+
+.center {
+    position: absolute;
+    width: 190px;
+    height: 62px;
+    top: 50%;
+    left: 50%;
+    margin-top: -31px;
+    margin-left: -95px;
+    text-align: center;
+    /*   border: 1px solid black; */
+}

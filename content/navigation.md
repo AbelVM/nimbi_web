@@ -1,6 +1,8 @@
 # Home
 
-[Now](index.md)
+[Home](home.html)
+
+[Now](now.md)
 
 [Blog](blog.md)
 
@@ -14,4 +16,4 @@
 
 [About nimbi](about.md)
 
-[gimmick:theme](spacelab)
+[About nimbiCMS](brochure.md)

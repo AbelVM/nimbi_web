@@ -4,7 +4,6 @@ The `highlighted` items are publications in third-party media.
 
 ## 2024
 
-* [nimbi: The Deploying of](blog/2024-09-24-deploy.md)
 * [`Abel Vázquez y los datos en abierto a favor de la ciudadanía`](https://climatica.coop/entrevista-abel-vazquez-datos-en-abiertos-arboles/) 🇪🇸
 
 ## 2021

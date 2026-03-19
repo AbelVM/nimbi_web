@@ -1,0 +1,221 @@
+:root {
+    --nimbi-primary: #fe019a;
+    --nimbi-background-light: rgb(69, 132, 180);
+    --nimbi-background-dark: rgb(31, 71, 120);
+    --nimbi-background: linear-gradient(to top, var(--nimbi-background-light) 0%, var(--nimbi-background-dark) 100%);
+    --headerv: 7vh;
+}
+
+@font-face {
+    font-family: 'Monice';
+    src: url('./MoniceRegular.ttf') format('truetype');
+    /* font-display: swap; */
+}
+
+html,
+body,
+#app {
+    height: 100vh;
+    max-height: 100vh;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    height: 0px;
+    width: 0px;
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #nimbi-search-dropdown {
+        float: right !important;
+    }
+}
+
+.navbar-burger,
+.navbar-item {
+    color: var(--nimbi-primary) !important;
+}
+
+.navbar-end {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 1rem;
+    top: calc(var(--nimbi-site-navbar-height, 4rem) / 2);
+    transform: translateY(-50%);
+    z-index: 9999;
+    margin-right: -21px;
+}
+
+article img,
+figure img {
+    border-radius: 10px;
+}
+
+
+
+/*
+
+Hero section
+
+*/
+
+#viewport {
+    perspective: 1000px;
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--nimbi-background);
+    overflow: hidden;
+    user-select: none;
+
+    position: fixed;
+    top: 0;
+    animation: sticky-header linear forwards;
+    animation-timeline: scroll();
+    animation-range: 0vh calc(100vh - var(--headerv));
+    cursor: all-scroll;
+}
+
+#world {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -256px;
+    margin-top: -256px;
+    height: 512px;
+    width: 512px;
+    /*   border: 1px solid rgb(255, 0, 0); */
+    transform-style: preserve-3d;
+    pointer-events: none;
+}
+
+#world div {
+    transform-style: preserve-3d;
+}
+
+.cloudBase {
+    /*   border: 1px solid #ff00ff; */
+    position: absolute;
+    left: 256px;
+    top: 256px;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.cloudLayer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 256px;
+    height: 256px;
+    margin-left: -128px;
+    margin-top: -128px;
+    opacity: 0;
+    transition: opacity 0.7s ease-out;
+}
+
+.fat {
+    color: #aaa;
+    font-weight: bold;
+    font-family: "Verdana";
+}
+
+.fatter {
+    color: var(--nimbi-primary);
+    font-weight: 900;
+    font-size: 80px;
+    font-family: "Monice";
+}
+
+.center {
+    position: absolute;
+    width: 190px;
+    height: 62px;
+    top: 50%;
+    left: 50%;
+    margin-top: -31px;
+    margin-left: -95px;
+    text-align: center;
+}
+
+
+/* CSS reset for hero section */
+
+.nimbi-mount:has(#viewport) {
+    background-color: var(--nimbi-background-dark) !important;
+
+    .navbar-end {
+        display: none;
+    }
+
+    .navbar,
+    .navbar-menu,
+    .navbar-item:focus {
+        background-color: rgba(var(--nimbi-background-dark), 0) !important;
+        box-shadow: none !important;
+    }
+
+    section {
+        padding: 0 !important;
+    }
+
+    .nimbi-cms {
+        max-width: 100vw !important;
+    }
+
+    .nimbi-content {
+        max-width: 100vw !important;
+        padding: 0 !important;
+    }
+
+    .columns {
+        padding: 0 !important;
+        margin: 0 !important;
+        height: 100% !important;
+    }
+
+    .nimbi-content {
+        height: 100% !important;
+    }
+
+    .nimbi-version-label,
+    .nimbi-nav-wrap,
+    .nimbi-overlay {
+        display: none !important;
+    }
+
+    @media screen and (max-width: 1023px) {
+        .navbar-item:hover {
+            background-color: var(--nimbi-background-light) !important;
+        }
+    }
+
+}
+
+#viewport img {
+    height: initial !important;
+    width: initial !important;
+    max-width: none !important;
+    max-height: none !important;
+}
