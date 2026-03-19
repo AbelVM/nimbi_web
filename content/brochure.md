@@ -9,7 +9,7 @@ You can find more info at the project's website: https://abelvm.github.io/nimbiC
 
 ## Why nimbiCMS?
 
-I was just wanted a simple way to manage a personal site without setting CI pipelines, something simple where the friction to publish was close to zero and without relying on 3rd-party managed services. I like writing in `Markdown` and it's easy to render `.md` files to HTML, so... let's build a pure client-side CMS on top of that idea.
+I was just wanted a simple way to manage a personal site without setting CI pipelines up, something simple where the friction to publish was close to zero and without relying on 3rd-party managed services. I like writing in `Markdown` and it's easy to render `.md` files to HTML, so... let's build a pure client-side CMS on top of that idea.
 
 **[nimbiCMS](https://abelvm.github.io/nimbiCMS/)** lets you publish directly from Markdown. Our runtime renders GitHub‑flavored Markdown, generates a sticky table of contents, estimates reading time, and keeps meta tags (Open Graph, Twitter) accurate as visitors navigate. Authors write in their favorite editor, push to a static host (GitHub Pages, S3, Netlify), and the site updates with no build step.
 
